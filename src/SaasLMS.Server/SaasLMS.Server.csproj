@@ -1,0 +1,22 @@
+&lt;Project Sdk="Microsoft.NET.Sdk.Web"&gt;
+
+  &lt;PropertyGroup&gt;
+    &lt;TargetFramework&gt;net8.0&lt;/TargetFramework&gt;
+    &lt;Nullable&gt;enable&lt;/Nullable&gt;
+    &lt;ImplicitUsings&gt;enable&lt;/ImplicitUsings&gt;
+  &lt;/PropertyGroup&gt;
+
+  &lt;ItemGroup&gt;
+    &lt;PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" /&gt;
+    &lt;PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" /&gt;
+    &lt;PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" /&gt;
+    &lt;PackageReference Include="Azure.Storage.Blobs" Version="12.19.1" /&gt;
+    &lt;PackageReference Include="Microsoft.Azure.SignalR" Version="1.22.0" /&gt;
+  &lt;/ItemGroup&gt;
+
+  &lt;ItemGroup&gt;
+    &lt;ProjectReference Include="..\SaasLMS.Client\SaasLMS.Client.csproj" /&gt;
+    &lt;ProjectReference Include="..\SaasLMS.Shared\SaasLMS.Shared.csproj" /&gt;
+  &lt;/ItemGroup&gt;
+
+&lt;/Project&gt;
